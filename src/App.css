@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.homeButton {
+
+  font-family:monospace;
+  font-size:x-large;
+  color: black;
+  background-color: skyblue;
+  float: right;
+  padding : 7.4px 15px;
+
+}
+.hero-section{
+  /* background-image: url("https://i.pinimg.com/736x/ac/84/0a/ac840abd3d0cb086a7afe646b7404ca6.jpg"); */
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Book-image-wallpapers-hd.jpg");
+  height:800px;
+  width:1300px;
+  /* margin-top: 100px;
+  margin-left: 300px; */
+}
+.home-welcome{
+  margin-left: 1000px;
+  font-size: 25px;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+.home-h1{
+  font-weight: bold;
+  margin-left: 900px;
+}
+marquee {
+  position:absolute;
+  font-size: 40px;
+  font-family: "Brush Script MT", cursive;
+  color :maroon;
+  margin-top: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

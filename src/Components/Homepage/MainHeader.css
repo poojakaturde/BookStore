@@ -1,0 +1,22 @@
+.logintab{
+    float:right;
+}
+.dbutton{
+    float: right;
+    width: 80px;
+    height: 45px;
+    font-size: large;
+    background-color:coral;
+    margin-right: 12px;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+.username{
+    color: whitesmoke;
+    font-size: large;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+.navbar navbar-inverse{
+    height:30%;
+}

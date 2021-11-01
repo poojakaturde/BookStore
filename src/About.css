@@ -1,0 +1,19 @@
+.about-image{
+    width:400px;
+    height:400px;
+    
+}
+.about-main{
+    display:flex;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.about{
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+}
+.aboutInfo{
+    font-size: large;
+    text-align: justify;
+}

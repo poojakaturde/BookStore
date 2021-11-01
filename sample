@@ -1,0 +1,50 @@
+import {useState} from 'react';
+
+function Sample(props){
+
+    let[username,setUsername] = useState(false);
+    let[password,setPassword] =useState(false);
+    let[emailValidate,setValidateEmail] = useState('');
+    let[passwordValidate,setValidatePassword]= useState('');
+    let[formValid,setFormValid] = useState(false);
+
+    usernameHandler(event){
+        setUsername(event.target.value);
+    }
+
+    passwordHandler(event){
+        setPassword(event.target.value);
+    }
+
+    emailValidateHandler(event){
+        setValidateEmail(event.target.value.includes('@'));
+        setFormValid(event.target.value.includes('@'));
+    }
+
+    passwordValidateHandler(event){
+        setValidatePassword(event.target.value.trim().length>6);
+        setFormValid(username.isValid && event.target.value.trim().length>6);
+    }
+
+    submitHandler(){
+        props.onLogin(username,password);
+    }
+return (
+
+<body>
+            <div class="wrapper">
+                <form class="login" onSubmit={submitHandler}>
+                    <h1 className="loginh">Login </h1>
+                    <label>Username :</label><br></br>
+                    <input type="text" placeholder="username" value={emailState.value} onChange={usernameHandler} onBlur={emailValidateHandler}></input><br></br>
+                    <label>Password :</label><br></br>
+                    <input type="text" placeholder="password" value={passwordState.value} onChange={passwordHandler} onBlur={passwordValidateHandler}></input><br></br>
+                    <a href=" ">Forgot your password?</a>
+                    <button className = "lbutton" type="submit" disabled={!formValid}>Login</button>
+
+                </form>
+            </div>
+        </body>
+
+        ); 
+    }

@@ -1,0 +1,35 @@
+.outer{
+    
+    display :block
+}
+
+.innerBlock{
+    display:flex;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bookImage{
+    
+    height:320px;
+     width:300px; 
+}
+
+.bookTitle{
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.bookDesc{
+    font-size: large;
+    margin-left: 20px;
+    text-align: justify;
+    padding-right: 5px;
+}
+
+.activeClass{
+    margin-left: 20px;
+    cursor:pointer;
+
+}
